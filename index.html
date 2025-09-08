@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #f5e6d3 0%, #faf3e7 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #3d3d3d;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(139, 115, 85, 0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d4af37 0%, #f0d878 100%);
+            padding: 40px;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            font-style: italic;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+
+        .photo-container {
+            flex-shrink: 0;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 250px;
+            border-radius: 10px;
+            border: 5px solid #d4af37;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-style: italic;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .description-section {
+            flex-grow: 1;
+        }
+
+        .description-section h2 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
+        }
+
+        .description-section p {
+            line-height: 1.8;
+            text-align: justify;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .cv-section {
+            text-align: center;
+            padding: 30px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 10px;
+        }
+
+        .cv-section h2 {
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .cv-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #d4af37 0%, #f0d878 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .cv-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, #b8941f 0%, #d4af37 100%);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .profile-photo {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Name Here</h1>
+            <p class="subtitle">Your Title / Position / Field of Study</p>
+        </header>
+
+        <div class="content">
+            <div class="profile-section">
+                <div class="photo-container">
+                    <div class="profile-photo">
+                        <!-- Replace with your photo -->
+                        <span>Your Photo Here</span>
+                        <!-- To add your photo, uncomment the line below and add your image file -->
+                        <!-- <img src="your-photo.jpg" alt="Profile Photo"> -->
+                    </div>
+                </div>
+
+                <div class="description-section">
+                    <h2>About Me</h2>
+                    <p>
+                        Welcome to my academic profile page. This is where you can write about your research interests, 
+                        academic background, and professional journey. Share your passion for your field of study, 
+                        your current projects, and what drives your academic pursuits.
+                    </p>
+                    <br>
+                    <p>
+                        You can add multiple paragraphs here to describe your educational background, research areas, 
+                        publications, teaching experience, and any other relevant information that helps visitors 
+                        understand your academic profile and expertise.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Curriculum Vitae</h2>
+                <p style="margin-bottom: 20px; color: #666;">
+                    Download my complete academic CV for detailed information about my education, 
+                    publications, and professional experience.
+                </p>
+                <!-- Replace 'your-cv.pdf' with the actual path to your CV file -->
+                <a href="your-cv.pdf" class="cv-button" download>Download CV (PDF)</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Tyler Gillis. All rights reserved. | Contact: tyler.gillis@ucf.edu</p>
+        </div>
+    </div>
+</body>
+</html>
